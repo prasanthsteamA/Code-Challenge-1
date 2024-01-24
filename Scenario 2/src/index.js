@@ -10,7 +10,28 @@
 
 
 // Write the function to find the getGrade obtained.
+
 function getGrade (s1, s2, s3) {
-   //your code here
+   let score = (s1+s2+s3)/3;
+   if(score>=90 && score<100) {
+    console.log('A');
+    return 'A';
+   }
+   else if(score>=80 && score<90) {
+    console.log('B');
+    return 'B';
+   }
+   else if(score>=70 && score<80) {
+    console.log('C');
+    return 'C';
+   }
+   else if(score>=60 && score<70) {
+    console.log('D');
+    return 'D';
+   }
+   else if(score>=0 && score<60) {
+    console.log('F');
+    return 'F';
+   }
   }
 //Use SpecRunner to check the Test Cases.
