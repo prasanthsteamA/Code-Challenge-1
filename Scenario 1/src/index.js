@@ -7,8 +7,18 @@
 
 
 // Write the function to find the findDigit obtained.
+
 var findDigit = function(num, nth){
-     //your code here
+     if(nth<0){ 
+      return -1;
+    }
+    else if(String(num).length < nth){
+      return 0;
+    }
+    else{
+      return String(num).charAt(String(num).length-nth).toLocaleUpperCase().charCodeAt(0)-48;
+    }
   }
+
 
 //Use SpecRunner to check the Test Cases.
