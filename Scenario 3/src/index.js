@@ -9,6 +9,11 @@
 // Write the function to find the otherAngle obtained.
 function otherAngle(a, b) {
        //your code here
+       let angle_3;
+       if(a > 0 && b>0){
+        angle_3 = 180-(a+b);
+       }
+       return angle_3;
 
   }
 
