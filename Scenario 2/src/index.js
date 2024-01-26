@@ -12,5 +12,29 @@
 // Write the function to find the getGrade obtained.
 function getGrade (s1, s2, s3) {
    //your code here
+   let mean =(s1+s2+s3)/3
+
+   if (mean<=100 && mean>=90){
+      return("A");
+   }
+
+   else if (mean<90 && mean>=80){
+     return("B");
+   }
+
+   else if(mean<80 && mean>=70){
+      return("C");
+   }
+
+   else if(mean<70 && mean>=60){
+    return("D");
+   }
+
+   else {
+    return("F");
+   } 
+
   }
+
+getGrade();
 //Use SpecRunner to check the Test Cases.
